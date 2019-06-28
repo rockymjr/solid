@@ -1,6 +1,7 @@
 package com.rocky.solid.sr.bad;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by mrk on 4/7/14.
@@ -9,30 +10,30 @@ public class Board {
     ArrayList<String> spots;
 
     public Board() {
-        this.spots = new ArrayList<String>();
+        this.spots = new ArrayList<>();
         for (int i = 0; i < 9; i++) {
             this.spots.add(String.valueOf(i));
         }
     }
 
-    public ArrayList<String> firstRow() {
-        ArrayList<String> firstRow = new ArrayList<String>();
+    public List<String> firstRow() {
+        List<String> firstRow = new ArrayList<>();
         firstRow.add(this.spots.get(0));
         firstRow.add(this.spots.get(1));
         firstRow.add(this.spots.get(2));
         return firstRow;
     }
 
-    public ArrayList<String> secondRow() {
-        ArrayList<String> secondRow = new ArrayList<String>();
+    public List<String> secondRow() {
+        List<String> secondRow = new ArrayList<>();
         secondRow.add(this.spots.get(3));
         secondRow.add(this.spots.get(4));
         secondRow.add(this.spots.get(5));
         return secondRow;
     }
 
-    public ArrayList<String> thirdRow() {
-        ArrayList<String> thirdRow = new ArrayList<String>();
+    public List<String> thirdRow() {
+        List<String> thirdRow = new ArrayList<>();
         thirdRow.add(this.spots.get(6));
         thirdRow.add(this.spots.get(7));
         thirdRow.add(this.spots.get(8));
